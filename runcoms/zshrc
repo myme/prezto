@@ -12,6 +12,8 @@ fi
 
 # Customize to your needs...
 
+eval `keychain --eval -q ~/.ssh/*_rsa`
+
 #
 # Source additional zsh-files
 #
