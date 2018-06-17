@@ -15,6 +15,13 @@ fi
 eval `keychain --eval -q ~/.ssh/*_rsa`
 
 #
+# Aliases
+#
+
+alias ta="tmux attach -t"
+alias tl="tmux list-sessions"
+
+#
 # Source additional zsh-files
 #
 
