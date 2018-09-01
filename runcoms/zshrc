@@ -12,7 +12,9 @@ fi
 
 # Customize to your needs...
 
-eval `keychain --eval -q ~/.ssh/*_rsa`
+if [ ! -S "$SSH_AUTH_SOCK" ]; then
+    eval `keychain --eval -q ~/.ssh/*_rsa`
+fi
 
 #
 # Aliases
